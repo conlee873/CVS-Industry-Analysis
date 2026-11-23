@@ -10,19 +10,19 @@ Mr. Potter wants to know if stronger than expected earnings performance is linke
 ## Main result
 Two or three sentences with your key number, then Figure 1.
 
-![Figure 1](figures/figure1.png)
+![Figure 1](figures/figure_1.png)
 
 > Example: *Stores near campuses sold 18% more during exam weeks; other stores showed no change.*
 
 ## Is the difference real?
 The t-test (difference, t-statistic, p-value) and the regression (b, p-value, R²) for each industry, in plain words, then Figure 2. If you ran more than one model, say in one sentence whether b changed.
 
-![Figure 2](figures/figure2.png)
+![Figure 2](figures/figure_2.png)
 
 ## Why the industries differ
 The reason you proposed, and what Figure 3 showed when you checked it.
 
-![Figure 3](figures/figure3.png)
+![Figure 3](figures/figure_3.png)
 
 ## Advice for the client
 - **Business implication:** what the client should do or learn.
