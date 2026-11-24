@@ -23,44 +23,42 @@ Positive, statistically significant relationship between SUE and CAR. SIC 59 coe
 ![Figure 2](figures/figure_2.png)
 
 ## Why the industries differ
-The reason you proposed, and what Figure 3 showed when you checked it.
+Retail and business services are two industries that have different levels of demand and risk. SIC 59 companies sell miscellaneous products to
+people, while SIC 73 companies just provide services to businesses and may be more likely to face changes in budgets and spending, and demand. Retail is stuff like everyday shopping, so changes in spending can affect its stock prices more. SIC 73 provides business services, so its stock prices is more rigid and dependent on other companies. Figure 3 checks one measurable difference: the share of announcements with negative quarterly earnings per share in each surprise earnings. In the low surprise earnings group, 45.83% of SIC 59 announcements and 54.79% of SIC 73 announcements had negative earnings per share. Middle has 14.97% and 21.62%. Lastly the High group had 25.00% and 24.84%. 
 
 ![Figure 3](figures/figure_3.png)
 
 ## Advice for the client
-- **Business implication:** what the client should do or learn.
-- **Limitation:** one reason to be careful (data, sample size or method).
-- **Next questions:** one predictive and one prescriptive question.
+**Business implication:** Stronger earnings surprises are associated with better stock returns in both industries. In SIC 59, a one-unit increase in SUE was associated with a 0.1844 increase in CAR, suggesting stronger earnings performance is linked to better stock reactions.
+**Limitation:** CVS operates across retail pharmacy, healthcare services, and health insurance. Its stock price can be influenced by factors such as, healthcare costs, insurance, pharmacy sales, and any changes in business
+The basic regression has a low r squared: SIC 59: 2.0% of variation explained, SIC 73: 0.4% of variation explained
+Prescriptive: Which of CVS's areas should management focus on: pharmacy, healthcare delivery, or health insurance to increase profit and returns?
+Predictive: Will CVS's decreasing or increasing profitability in its health insurance business cause a positive or negative stock reaction over the next year?
+
 
 ## Data
 - Sources: Compustat (`comp.fundq`), CRSP (`crsp.dsf`, `crsp.dsi`), accessed through WRDS. Add or remove tables to match your work.
 - **The data are not included in this repository** because of the WRDS license. Someone with WRDS access can rebuild the results by running the notebook with the link file in the same folder.
 
-- Sample period and rules: [period, filters].
+- Sample period and rules: SIC 59: 1,110 quarters to start, 1,029 after matching, and 503 at the end leaving a total of 45 companies. SIC 73: 9,852 to start, 9,061 after matching, and 4,287, giving 387 companies. Data from 2021 to 2024 and got rid of data that did not pass the rules.
 
 ## How the tables fit together
-Your merge map (image) and two or three sentences on the keys and the date rule.
+
+Started with quarterly earnings data from Compustat, including each company's earnings announcement date (rdq).We used rdq to match each company, gvkey to the correct stock, permno in the CCM link file. rdq here instead of datadate, but datedate is plan b. Added each stock's daily returns from CRSP and lined them up with the market's returns by date. Lastly calculated abnormal returns and matched them to the three day window around each earnings announcement (-1, Day 0, +1)
 
 ![Merge map](figures/merge_map.png)
 
 ## How I checked the results
-Your most useful check in two or three sentences: what you expected, what you found, what you did.
+
 
 ## Changes since Project 2
 | What was wrong | How I fixed it | How the results changed |
-| --- | --- | --- |
-| | | |
-
-Write "None" if there was nothing to fix.
+| Usage of markdowns and rdq instead of datedate | Included markdowns labelling sections and what it does. Also explained why I use rdq (data date would cause missing data, so only rely on it as a fallback) | Same results |
 
 ## Where the code came from
-The class notebook, an AI tool, or your own changes. List every AI conversation you used, one line per conversation:
 
-| AI tool | Link (or PDF in docs/) | What I used it for |
-| ChatGPT |  | Code for figures and tables |
-| | | |
+| ChatGPT | https://chatgpt.com/share/6b04daab-0c18-83ea-b9a8-c8d417430c1f | Code for figures and tables |
 
-Write "None" if you used no AI.
 
 ## Files
 ```
