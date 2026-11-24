@@ -50,6 +50,7 @@ Started with quarterly earnings data from Compustat, including each company's ea
 
 ## How I checked the results
 
+I checked for missing data values or duplicate information and removed those. I also removed the five largest cumalative return records to see if the extremes would change the results. There was a positive relationship between the surprise earning and culmative return as expected, showing that results were not affected by any outliers. I also hand checked and recalculated the surprise earnings as well as calmative returns for an individual record comparing them with the WRDS data. 
 
 ## Changes since Project 2
 | What was wrong | How I fixed it | How the results changed |
