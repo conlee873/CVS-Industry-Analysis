@@ -8,14 +8,17 @@ One or two sentences in plain words: who the client is and what they want to kno
 Mr. Potter wants to know if stronger than expected earnings performance is linked with a better stock market reaction. This analysis compares the surprise earnings with three day cumulative abnormal returns for companies in SIC 59 with results of those in SIC 73
 
 ## Main result
-Two or three sentences with your key number, then Figure 1.
+
+Throughout all 503 announcements from 45 SIC: 59 companies, the High surpass earnings group had an average car of 4.70 percentage points higher than the low purpose earnings group. The difference is statistically significant, t = 3.43 and p < 0.001. In the SIC 73, the high surprise earnings group had an average cumulative return 3.28 percentage points higher compared to the low surprise earnings group, t = 7.25 p < .001, based on 387 companies and 4287 announcements. This is a positive relationship between earnings purpose and the stock reaction in not only miscellaneous retail, but also business services. They do not prove that higher earnings cause higher returns all the time. 
 
 ![Figure 1](figures/figure_1.png)
 
-> Example: *Stores near campuses sold 18% more during exam weeks; other stores showed no change.*
-
 ## Is the difference real?
-The t-test (difference, t-statistic, p-value) and the regression (b, p-value, R²) for each industry, in plain words, then Figure 2. If you ran more than one model, say in one sentence whether b changed.
+
+Statistically significant in both: 
+SIC 59: 4.79 percentage points, t = 3.43, and p < 0.001
+SIC 73: 3.28 percentage points, t = 7.25, and p < 0.001.
+Positive, statistically significant relationship between SUE and CAR. SIC 59 coefficient is 0.1844 and has a r squared of .02, SIC 73 has a coefficient of 0.1163 and a r squared of .004. A one point increase in SUE is associated with a 0.1844 increase in CAR and a one point increase in SUE is associated with a 0.1163 increase in CAR. The low r squared show that surprise earnings alone only has small explanatory power in stock reactions. Winsorized coefficients stayed positive but became smaller: SIC 59 changed from 0.1844 to 0.1549 (p = 0.005), and SIC 73 changed from 0.1163 to 0.0853 (p < 0.001). The overall finding did not change.
 
 ![Figure 2](figures/figure_2.png)
 
@@ -54,7 +57,7 @@ Write "None" if there was nothing to fix.
 The class notebook, an AI tool, or your own changes. List every AI conversation you used, one line per conversation:
 
 | AI tool | Link (or PDF in docs/) | What I used it for |
-| --- | --- | --- |
+| ChatGPT |  | Code for figures and tables |
 | | | |
 
 Write "None" if you used no AI.
